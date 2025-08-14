@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:formulario/presentation/views/initial_view.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -12,7 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Inicial(),
+      debugShowCheckedModeBanner: false,
+      home: const Inicial(),
     );
   }
 }
