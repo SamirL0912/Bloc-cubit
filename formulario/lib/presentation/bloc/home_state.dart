@@ -1,6 +1,10 @@
-part of 'home_bloc.dart';
+import 'package:equatable/equatable.dart';
 
-@immutable
-sealed class HomeState {}
+class HomeState extends Equatable {
+  final String mensaje;
 
-final class HomeInitial extends HomeState {}
+  const HomeState({required this.mensaje});
+
+  @override
+  List<Object> get props => [mensaje];
+}

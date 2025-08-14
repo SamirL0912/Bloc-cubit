@@ -1,13 +1,11 @@
-import 'package:bloc/bloc.dart';
-import 'package:meta/meta.dart';
-
-part 'home_event.dart';
-part 'home_state.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:formulario/presentation/bloc/home_event.dart';
+import 'package:formulario/presentation/bloc/home_state.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
-  HomeBloc() : super(HomeInitial()) {
-    on<HomeEvent>((event, emit) {
-      // TODO: implement event handler
+  HomeBloc() : super(const HomeState(mensaje: 'Sin datos')) {
+    on<CargarHomeEvent>((event, emit) {
+      emit(HomeState(mensaje: 'Actualizado desde HomeBloc: ${DateTime.now()}'));
     });
   }
 }

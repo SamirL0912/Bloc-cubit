@@ -1,4 +1,10 @@
-part of 'home_bloc.dart';
+import 'package:equatable/equatable.dart';
 
-@immutable
-sealed class HomeEvent {}
+abstract class HomeEvent extends Equatable {
+  const HomeEvent();
+
+  @override
+  List<Object> get props => [];
+}
+
+class CargarHomeEvent extends HomeEvent {}

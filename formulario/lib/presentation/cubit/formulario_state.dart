@@ -1,6 +1,10 @@
 part of 'formulario_cubit.dart';
 
-@immutable
-sealed class FormularioState {}
+class FormularioState extends Equatable {
+  final String valor;
 
-final class FormularioInitial extends FormularioState {}
+  const FormularioState({required this.valor});
+
+  @override
+  List<Object> get props => [valor];
+}
