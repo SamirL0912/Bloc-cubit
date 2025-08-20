@@ -12,10 +12,9 @@ class Inicial extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('División'),    
-        backgroundColor: Color.fromARGB(65, 10, 107, 75),    
+        title: const Text('División'),
+        backgroundColor: const Color.fromARGB(65, 10, 107, 75),
         centerTitle: true,
-
       ),
       body: Row(
         children: [
@@ -84,31 +83,6 @@ class Inicial extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-// 🔹 main.dart
-void main() {
-  runApp(
-    MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (_) => HomeBloc()),
-        BlocProvider(create: (_) => FormularioCubit()),
-      ],
-      child: const MyApp(),
-    ),
-  );
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false, // ✅ Desactiva el banner de debug
-      home: const Inicial(),
     );
   }
 }
