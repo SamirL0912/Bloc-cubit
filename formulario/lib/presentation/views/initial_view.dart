@@ -17,7 +17,7 @@ class Inicial extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('División'),
+        title: const Text('Campeones de los 2000 en adelante'),
         backgroundColor: const Color.fromARGB(65, 10, 107, 75),
         centerTitle: true,
       ),
@@ -32,7 +32,7 @@ class Inicial extends StatelessWidget {
                   const SizedBox(height: 10),
                   const Text(
                     'Champions (Bloc)',
-                    style: TextStyle(fontSize: 18, color: Colors.white),
+                    style: TextStyle(fontSize: 18, color: Colors.white),  
                   ),
                   const SizedBox(height: 10),
                   Expanded(
