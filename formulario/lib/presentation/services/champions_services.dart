@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/champions_model.dart';
 
 class ChampionsService {
-  final String url = "https://api.jsonbin.io/v3/qs/68a656d9d0ea881f405eb1fca";
+  final String url = "https://jsonkeeper.com/b/RQ6XE";
 
   Future<List<ChampionsModel>> getChampions() async {
     final response = await http.get(Uri.parse(url));

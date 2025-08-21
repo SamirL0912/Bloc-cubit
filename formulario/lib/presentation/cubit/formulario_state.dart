@@ -1,4 +1,7 @@
-part of 'formulario_cubit.dart';
+import 'package:equatable/equatable.dart';
+
+import '../models/europa_model.dart';
+
 
 class FormularioState extends Equatable {
   final List<EuropaModel> europa;
@@ -22,7 +25,7 @@ class FormularioState extends Equatable {
     return FormularioState(
       europa: europa ?? this.europa,
       loading: loading ?? this.loading,
-      error: error,
+      error: error ?? this.error,
     );
   }
 }
