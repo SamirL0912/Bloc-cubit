@@ -11,7 +11,6 @@ class Inicial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Cargar los datos automáticamente al construir la vista
     context.read<HomeBloc>().add(CargarHomeEvent());
     context.read<FormularioCubit>().actualizarTexto();
 
@@ -32,7 +31,7 @@ class Inicial extends StatelessWidget {
                   const SizedBox(height: 10),
                   const Text(
                     'Champions (Bloc)',
-                    style: TextStyle(fontSize: 18, color: Colors.white),  
+                    style: TextStyle(fontSize: 18, color: Colors.white),
                   ),
                   const SizedBox(height: 10),
                   Expanded(

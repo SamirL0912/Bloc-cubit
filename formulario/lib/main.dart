@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Bloc + Cubit',
-      home: const Inicial(), // ahora sí tiene acceso a los providers
+      home: const Inicial(),
     );
   }
 }
